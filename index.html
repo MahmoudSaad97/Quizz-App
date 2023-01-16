@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quizz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Css/Quizz.css">
+</head>
+<body>
+  <div class="container">
+    <div class="test-name">
+      <h3>JavaScript Quiz</h3>
+    </div>
+    <div class="info">
+      <p><span id="currQ">#0</span> of <span id="totalQ">0</span></p>
+      <div class="prog">
+        <span id="progres"></span>
+      </div>
+    </div>
+    <div class="card" >
+      <h3 id="Quest">What should You do while abroaching the road</h3>
+      <ul>
+        <li id="a">Answer 1</li>
+        <li id="b">Answer 2</li>
+        <li id="c">Answer 3</li>
+        <li id="d">Answer 4</li>
+      </ul>
+    </div>
+    <div class="answers">
+      <button id="answerA" onclick="submit(this.id)">A</button>
+      <button id="answerB" onclick="submit(this.id)">B</button>
+      <button id="answerC" onclick="submit(this.id)">C</button>
+      <button id="answerD" onclick="submit(this.id)">D</button>
+    </div>
+    <audio src="Congratulations.mp3" id="audio"></audio>
+  </div>
+  <script src="js/Quizz.js"></script>
+</body>
+</html>
